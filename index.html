@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 id="welcome-message" class="display-4">مرحبا بك</h1>
+            <button id="logout-button" class="btn btn-outline-secondary mt-3">تسجيل الخروج</button>
+        </header>
+
+        <section class="traveler-info mb-5">
+            <h2 class="text-primary">معلومات المسافر</h2>
+            <div class="card p-3">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم:</label>
+                    <input type="text" id="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">العمر:</label>
+                    <input type="number" id="age" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="familySize">عدد الأفراد:</label>
+                    <input type="number" id="familySize" class="form-control" required>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-flights">
+            <h2 class="text-primary">البحث عن رحلات</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="destination">اختر الوجهة:</label>
+                    <select id="destination" class="form-control" required>
+                        <option value="أبها">أبها</option>
+                        <option value="الرياض">الرياض</option>
+                        <option value="جدة">جدة</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="transport">اختر وسيلة النقل:</label>
+                    <select id="transport" class="form-control" required>
+                        <option value="طائرة">طائرة</option>
+                        <option value="قطار">قطار</option>
+                        <option value="باص">باص</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">بحث عن نتائج</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
